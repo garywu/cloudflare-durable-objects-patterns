@@ -1272,13 +1272,33 @@ Use `@cloudflare/actors` when you want typed actor methods instead of HTTP routi
 
 ## References
 
+### Cloudflare Platform
 - [Cloudflare Durable Objects Documentation](https://developers.cloudflare.com/durable-objects/)
 - [Rules of Durable Objects](https://developers.cloudflare.com/durable-objects/best-practices/rules-of-dos/) — Best practices guide (Dec 2025)
 - [Durable Objects Alarms](https://developers.cloudflare.com/durable-objects/best-practices/alarms/)
-- [Cloudflare Agents SDK](https://developers.cloudflare.com/agents/)
-- [`@cloudflare/actors` Library](https://github.com/nichochar/actors)
-- [Microsoft Orleans — Virtual Actors](https://learn.microsoft.com/en-us/dotnet/orleans/overview)
-- [Event-Driven Architecture on Cloudflare Workers](https://github.com/garywu/cloudflare-event-driven-architecture) — Companion article on Queues, events, and message-driven patterns
+- [Durable Objects Storage API](https://developers.cloudflare.com/durable-objects/api/storage-api/) — Transactional KV and SQLite storage
+- [Cloudflare Agents SDK](https://developers.cloudflare.com/agents/) — Stateful agent framework built on Durable Objects
+- [Cloudflare Agents SDK GitHub](https://github.com/cloudflare/agents) — Source code and examples
+- [Cloudflare Workflows](https://developers.cloudflare.com/workflows/) — Durable multi-step execution engine
+- [Cloudflare Queues](https://developers.cloudflare.com/queues/) — Message passing between Workers
+- [`@cloudflare/actors` Library](https://github.com/nichochar/actors) — Actor model abstraction over DOs
+- [Building Real-Time Games with Workers and Durable Objects](https://blog.cloudflare.com/building-real-time-games-using-workers-durable-objects-and-unity/) — Game state management with DOs
+- [Durable Objects: Easy, Fast, Correct — Choose Three](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/) — Architecture deep dive
+- [Introducing Workers Durable Objects](https://blog.cloudflare.com/introducing-workers-durable-objects/) — Original announcement and design rationale
+
+### Companion Articles
+- [Event-Driven Architecture on Cloudflare Workers](https://github.com/garywu/cloudflare-event-driven-architecture) — Queues, fan-out, idempotency, outbox pattern
+- [Composable Processor Architecture](https://github.com/garywu/composable-processor-architecture) — 7 processor types, artifact store, budget management
+
+### Equivalent Systems (Comparisons)
+- [Microsoft Orleans — Virtual Actors](https://learn.microsoft.com/en-us/dotnet/orleans/overview) — .NET virtual actor framework, closest equivalent to DO model
+- [Azure Durable Entities](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-entities) — Stateful entities in Azure Durable Functions
+- [Temporal](https://temporal.io/) — Durable execution platform with workflow-as-code
+- [Akka Actors](https://doc.akka.io/concepts/index.html) — JVM actor model (original inspiration for many stateful compute patterns)
+
+### Architecture Patterns
+- [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/) — Foundational messaging patterns (Hohpe & Woolf)
+- [Microservices Patterns](https://microservices.io/patterns/) — Chris Richardson's pattern catalog
 
 ---
 
